@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex Layout</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+        }
+        .side-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 800px;
+            color: #ffffff;
+            width: 50%;
+            height: 940px;
+            border-radius: 10px;
+            background-color: #e61e66;
+        }
+        .side-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 800px;
+            color: #ffffff;
+            width: 100%;
+            height: 460px;
+            border-radius: 10px;
+            background-color: #fb9b11;
+        }
+        .main-side-2{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-side{
+            display: flex;
+            width: 100%;
+            gap: 20px;
+        }
+        .side-3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 800px;
+            color: #ffffff;
+            width: 50%;
+            height: 460px;
+            border-radius: 10px;
+            background-color: #a93aba;
+        }
+        .side-4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            font-weight: 800px;
+            color: #ffffff;
+            width: 50%;
+            height: 460px;
+            border-radius: 10px;
+            background-color: #566c7a;
+        }
+
+        /* mobile divece media queary */
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            } 
+            .side-1{
+                width: 100%;
+                height: 300px;
+            }
+            .side-2{
+                height: 300px;
+            }
+            .main-side-2{
+                width: 100%;
+            }        
+            .main-side{
+                flex-direction: column;
+            }
+            .side-3{
+                width: 100%;
+                height: 300px;
+            }
+            .side-4{
+                width: 100%;
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- responsive flex layout -->
+
+    <div class="container">
+        <div class="side-1">1</div>
+        <div class="main-side-2">
+            <div class="side-2">2</div>
+            <div class="main-side">
+                <div class="side-3">3</div>
+                <div class="side-4">4</div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+</head>
+<style>
+    .container{
+        display: flex;
+        gap: 50px;
+        border-radius: 20px;
+        padding: 20px;
+        border: 10px solid black;
+    }
+    .side-1{
+        width: 40%;
+        height: 870px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        border-radius: 20px;
+        background-color: #d2d2d2;
+    }
+    .side-2{
+        width: 60%;
+        height: 870px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800;
+        border-radius: 20px;
+        background-color: #f4f4da;
+    }
+
+    /* mobile device media queary start */
+    @media screen and (max-width: 576px) {
+        .container{
+            flex-direction: column;
+        }
+        .side-1{
+            height: 250px;
+            width: 100%;
+        }
+        .side-2{
+            height: 410px;
+            width: 100%;
+        }
+    }
+    /* mobile device media queary end */
+</style>
+
+<body>
+
+
+    <!-- flex layout -->
+
+    <div class="container">
+        <div class="side-1">Left</div>
+        <div class="side-2">Right</div>
+    </div>
+
+
+</body>
+
+</html>
