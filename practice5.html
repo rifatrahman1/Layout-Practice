@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .revers-1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .revers-1 img {
+        width: 50%;
+    }
+
+    .revers-1-title {
+        margin-left: 30px;
+    }
+
+    .revers-1-title h2 {
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .revers-1-title p {
+
+        line-height: 28px;
+        font-size: 18px;
+    }
+    .revers-2 {
+        align-items: center;
+        display: flex;
+    }
+
+    .revers-2 img {
+        width: 50%;
+    }
+
+    .revers-2-title {
+        
+        margin-left: 30px;
+    }
+
+    .revers-2-title h2 {
+        font-size: 35px;
+        font-weight: 900;
+    }
+
+    .revers-2-title p {
+
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    /* responsive mobile device */
+
+    @media screen and (max-width: 576px) {
+        .revers-1 {
+            flex-direction: column;
+        }
+
+        .revers-1 img {
+            width: 100%;
+        }
+        .revers-2{
+            margin-bottom: 200px;
+        }
+        .revers-1-title {
+            height: 500px;
+        }
+
+        .revers-1-title p {
+            width: 100%;
+            max-height: 150px;
+            /* মোবাইলে প্যারাগ্রাফের উচ্চতা সীমাবদ্ধ */
+            overflow-y: auto;
+            /* Vertical scroll যোগ করা হয়েছে */
+        }
+
+        .revers-2 {
+            flex-direction: column-reverse;
+        }
+
+        .revers-2 img {
+            width: 100%;
+        }
+
+        .revers-2-title {
+            height: 500px;
+        }
+
+        .revers-2-title p {
+            width: 100%;
+            max-height: 150px;
+            /* মোবাইলে প্যারাগ্রাফের উচ্চতা সীমাবদ্ধ */
+            overflow-y: auto;
+            /* Vertical scroll যোগ করা হয়েছে */
+        }
+    }
+</style>
+
+<body>
+
+    <!-- responsice reverse layout -->
+
+    <div class="container">
+        <div class="revers-1">
+            <img src="./image/town hall-1.jpg" alt="">
+            <div class="revers-1-title">
+                <h2>Why do we use it ?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque soluta quos alias amet sapiente esse
+                    consequuntur nihil, quidem quae, cumque optio nobis veritatis quisquam deleniti ipsam doloribus odio
+                    reprehenderit excepturi expedita odit blanditiis quo maiores eos enim! Consequuntur expedita
+                    reprehenderit labore debitis laboriosam ipsum dignissimos quas distinctio nesciunt omnis aspernatur
+                    ex est voluptatum, unde vitae, ducimus quae tempora perferendis neque harum quibusdam! Rerum qui
+                    tempora dolor. Consequatur ipsa, iusto alias commodi aspernatur cumque, inventore sunt praesentium
+                    laboriosam ex dolores sequi dolore aliquam libero facere nobis aliquid, debitis quibusdam hic
+                    eveniet odio labore. Minima praesentium fugit at ex dolorem, quam maiores nostrum assumenda adipisci
+                    labore ipsum. Debitis, laudantium. Provident, officiis dolorum. Adipisci, quidem nesciunt? Fugiat
+                    perferendis optio praesentium. Quod non quidem magnam porro veritatis sed architecto! Harum at
+                    magnam quidem. Obcaecati tenetur quibusdam hic, magnam qui totam at, perferendis, molestias quaerat
+                    dicta reprehenderit doloremque rem iure! Cum animi adipisci, veritatis esse soluta officiis numquam
+                    odit quae amet aliquam, tempora sit magnam accusantium quasi, asperiores quam accusamus illo nam
+                    iure. Harum, accusantium. Quasi, sint, magni ex accusamus deleniti maiores vero consectetur quia
+                    voluptates quibusdam perferendis eveniet adipisci a, saepe quos velit. Ut explicabo alias est
+                    corrupti nemo debitis itaque accusamus fugit quis.</p>
+            </div>
+        </div>
+        <div class="revers-2">
+            <div class="revers-2-title">
+                <h2>Why do we use it ?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque soluta quos alias amet sapiente esse
+                    consequuntur nihil, quidem quae, cumque optio nobis veritatis quisquam deleniti ipsam doloribus odio
+                    reprehenderit excepturi expedita odit blanditiis quo maiores eos enim! Consequuntur expedita
+                    reprehenderit labore debitis laboriosam ipsum dignissimos quas distinctio nesciunt omnis aspernatur
+                    ex est voluptatum, unde vitae, ducimus quae tempora perferendis neque harum quibusdam! Rerum qui
+                    tempora dolor. Consequatur ipsa, iusto alias commodi aspernatur cumque, inventore sunt praesentium
+                    laboriosam ex dolores sequi dolore aliquam libero facere nobis aliquid, debitis quibusdam hic
+                    eveniet odio labore. Minima praesentium fugit at ex dolorem, quam maiores nostrum assumenda adipisci
+                    labore ipsum. Debitis, laudantium. Provident, officiis dolorum. Adipisci, quidem nesciunt? Fugiat
+                    perferendis optio praesentium. Quod non quidem magnam porro veritatis sed architecto! Harum at
+                    magnam quidem. Obcaecati tenetur quibusdam hic, magnam qui totam at, perferendis, molestias quaerat
+                    dicta reprehenderit doloremque rem iure! Cum animi adipisci, veritatis esse soluta officiis numquam
+                    odit quae amet aliquam, tempora sit magnam accusantium quasi, asperiores quam accusamus illo nam
+                    iure. Harum, accusantium. Quasi, sint, magni ex accusamus deleniti maiores vero consectetur quia
+                    voluptates quibusdam perferendis eveniet adipisci a, saepe quos velit. Ut explicabo alias est
+                    corrupti nemo debitis itaque accusamus fugit quis.</p>
+            </div>
+            <img src="./image/town hall-2.jpg" alt="">
+        </div>
+    </div>
+
+</body>
+
+</html>

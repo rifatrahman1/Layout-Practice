@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Responsive</title>
+</head>
+<style>
+    .foods{
+        width: 60%;
+        height: 400px;
+        gap: 20px;
+        margin-top: 20px;
+        
+        align-items: center;
+        border: 1px solid black;
+        display: flex;
+    }
+    .food-images img{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .food-title h2{
+        font-size: 35px;
+        font-weight: 800px;
+        margin-top: 5px;
+    }
+    .food-title p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    button{
+        padding: 10px 20px;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        background-color: #0b6ff2;
+    }
+    .foods2{
+        width: 60%;
+        height: 400px;
+        gap: 20px;
+        margin-top: 20px;
+        align-items: center;
+        border: 1px solid black;
+        display: flex;
+    }
+    .food-images2 img{
+        width: 400px;
+        height: 400px;
+    }
+    
+    .food-title2 h2{
+        font-size: 35px;
+        font-weight: 800px;
+        margin-top: 5px;
+    }
+    .food-title2 p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    button{
+        padding: 10px 20px;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        background-color: #0b6ff2;
+    }
+
+    /* responsive mobile device */
+
+    @media screen and (max-width: 576px) {
+        .food-images img{
+            width: 100%;
+        }
+         .foods{
+            width: 100%;
+            border: none;
+            flex-direction: column;
+         }        
+        .food-images2 img{
+            width: 100%;
+        }
+         .foods2{
+            width: 100%;
+            margin-top: 100%;
+            border: 1px solid black;
+            flex-direction: column;
+         }        
+    }
+</style>
+
+<body>
+
+    <!-- food resposive layout -->
+
+    <div class="container">
+        <div class="foods">
+            <div class="food-images">
+                <img src="./image/food-1.png.jpg" alt="">
+            </div>
+            <div class="food-title">
+                <h2>Post Title Will Be Here</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, reprehenderit voluptatum praesentium maiores iusto impedit, at blanditiis fuga labore modi perferendis voluptates ullam amet vel debitis error, incidunt a cumque. Iure vel quidem totam nobis ipsam aliquam iste est at exercitationem iusto. Voluptatibus quisquam odio ab delectus, repellendus hic officiis similique autem amet quidem reiciendis eligendi deserunt dolor quasi excepturi? Voluptatum atque obcaecati quaerat aut sapiente praesentium ullam facilis accusamus impedit distinctio, perspiciatis dolorum quidem consequatur soluta, excepturi esse sed.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="foods2">
+            <div class="food-images2">
+                <img src="./image/food-2.png.jpg" alt="">
+            </div>
+            <div class="food-title2">
+                <h2>Post Title Will Be Here</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur dignissimos neque consequatur eligendi aspernatur velit. Ad laboriosam pariatur dolores iste voluptatibus corrupti officiis beatae voluptates rem excepturi quasi corporis reprehenderit aliquam odit, blanditiis similique, totam non rerum obcaecati cupiditate tenetur voluptatem. Laborum amet inventore, suscipit optio, temporibus impedit qui fuga velit, veniam neque officiis dolores possimus eius cupiditate molestias! Obcaecati animi iure ut, maiores minima iste amet voluptatem, quam doloremque porro sequi, commodi delectus illum aliquid cumque sunt. Odio, ducimus?</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
